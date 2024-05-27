@@ -8,6 +8,8 @@ import { ViewComponent } from './view/view.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 
+import {MatCard, MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { DeleteComponent } from './delete/delete.component';
     AddComponent,
     ViewComponent,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
   ],
   imports: [
     CommonModule,
-    CreditcardsRoutingModule
+    CreditcardsRoutingModule,
+    MatCardModule,
+    MatTableModule
   ]
 })
 export class CreditcardsModule { }
